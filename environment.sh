@@ -36,7 +36,14 @@ source <(ec --show-completion ${SHELL})
 #### SECTION 3. Configure Kubernetes Cluster ###################################
 
 
-# TODO add commands here to enable kubectl to connect to the cluster
+# the following configures kubernetes inside DLS.
+
+module unload argus > /dev/null
+module load argus > /dev/null
+# set the default namespace for kubectl and helm (for convenience only)
+kubectl config set-context --current --namespace=bl01t-beamline
+# make sure the user has provided credentials
+kubectl version
 
 
 # enable shell completion for k8s tools
