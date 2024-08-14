@@ -2,7 +2,7 @@
 _commit: 0.2.3
 _src_path: gh:epics-containers/services-template-helm
 cluster_name: argus
-cluster_namespace: bl01t-beamline
+cluster_namespace: esq51579
 cluster_type: dls_cluster
 description: bl01t IOC Instances and Services
 git_platform: github.com

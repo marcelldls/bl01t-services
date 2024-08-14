@@ -15,7 +15,7 @@ echo "Loading environment for bl01t IOC Instances and Services ..."
 
 export EC_CLI_BACKEND="K8S"
 # the namespace to use for kubernetes deployments
-export EC_TARGET=bl01t-beamline
+export EC_TARGET=esq51579
 # the git repo for this project
 export EC_SERVICES_REPO=https://github.com/marcelldls/bl01t-services
 # declare your centralised log server Web UI
@@ -41,7 +41,7 @@ source <(ec --show-completion ${SHELL})
 module unload argus > /dev/null
 module load argus > /dev/null
 # set the default namespace for kubectl and helm (for convenience only)
-kubectl config set-context --current --namespace=bl01t-beamline
+kubectl config set-context --current --namespace=esq51579
 # make sure the user has provided credentials
 kubectl version
 
