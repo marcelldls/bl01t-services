@@ -3,7 +3,6 @@
 global:
   ioc_group: bl01t
   location: bl01t
-  enabled: true
 
 ioc-instance:
   # useHostNetwork - use host network for IOC - required for Channel Access
